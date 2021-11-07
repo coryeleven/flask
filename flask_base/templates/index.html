@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>Hello Flask!</div>
+<hr>
+<!--变量代码块使用-->
+<p>{{ url_str }}</p>
+<!--字典的使用-->
+<p>{{ url_json }}</p>
+<p>{{ url_json['name'] }}</p>
+<p>{{ url_json.phone }}</p>
+<!--列表的使用-->
+<p>{{ url_list }}</p>
+<p>{{ url_list.2 }}</p>
+<p>{{ url_list[3] }}</p>
+<p>{{ url_int }}</p>
+<hr>
+<ul>
+<!--for 循环代码块-->
+    {% for index in url_list %}
+    <li> {{ index }}</li>
+    {% endfor %}
+</ul>
+<hr>
+</body>
+</html>
